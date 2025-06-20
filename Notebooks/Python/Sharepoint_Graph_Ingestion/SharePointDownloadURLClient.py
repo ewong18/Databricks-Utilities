@@ -36,7 +36,7 @@ class SharePointDownloadURLClient():
     
     def get_site_id(self):
         url_parts = self._sourceURL.split("/")
-        root = url_parts[2] #bp365.sharepoint.com
+        root = url_parts[2] #contoso.sharepoint.com
         site = "/".join(url_parts[3:5]) #sites/{site_name}
         relative_path = f"{root}:/{site}"
 
